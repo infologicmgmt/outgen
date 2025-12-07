@@ -16,7 +16,7 @@ build:
 release-local:
 	goreleaser release --snapshot --skip-publish --rm-dist
 release-build:
-	goreleaser build
+	goreleaser build --clean
 
 test:
 	$(GO_CMD) test ./...
