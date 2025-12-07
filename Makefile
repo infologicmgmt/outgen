@@ -14,7 +14,8 @@ build:
 	$(GO_CMD) build -o $(BINARY_NAME) ./cmd/outgen
 
 release-local:
-	goreleaser release --snapshot --skip-publish --rm-dist
+	goreleaser release --snapshot --clean
+
 release-build:
 	goreleaser build --clean
 
