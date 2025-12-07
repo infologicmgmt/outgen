@@ -17,7 +17,7 @@ before:
 
 builds:
   - id: outgen
-    main: ./cmds/outgen/main.go
+    main: ./cmd/outgen/main.go
     env:
       - CGO_ENABLED=0
     goos:
